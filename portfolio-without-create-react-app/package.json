@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-without-create-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "parcel": "^1.12.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "prestart": "npm run build",
+    "start": "live-server dist"
+  }
+}
