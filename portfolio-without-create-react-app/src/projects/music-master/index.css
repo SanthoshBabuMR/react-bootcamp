@@ -1,12 +1,12 @@
 @font-face {
     font-family: RobotoCondensed;
-    src: url(roboto-condensed.light.6709adf4.ttf);
+    src: url(assets/roboto-condensed.light.ttf);
     font-weight: 800;
 }
 
 @font-face {
     font-family: EconomicaBold;
-    src: url(economica-bold.12a9e27d.ttf);
+    src: url(assets/economica-bold.ttf);
 }
 
 body {
@@ -30,15 +30,18 @@ a {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .track {
     position: relative;
     margin: 20px;
     cursor: pointer;
 }
+
 .track-image {
     width: 200px;
     height: 200px;
 }
+
 .track-text {
     position: absolute;
     bottom: 0;
@@ -46,6 +49,7 @@ a {
     color: #fff;
     width: 100%;
 }
+
 .track-icon {
     position: absolute;
     background: black;
@@ -59,4 +63,19 @@ a {
     left: 50%;
     margin-left: -25px;
     margin-top: -25px;
+}
+
+@keyframes tilt {
+    from {
+        transform: rotate(15deg)
+    }
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+.tilt {
+  transform: rotate(0deg);
+  animation-name: tilt;
+  animation-duration: 2s; 
 }
