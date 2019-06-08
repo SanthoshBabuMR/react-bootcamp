@@ -12,7 +12,7 @@ const Header = ({children}) => {
             <h3 style={style}>
                 <Link className="nav-link" to="/">Home</Link>
             </h3>
-            <h3 style={style}>
+            <h3 style={style}> 
                 <Link className="nav-link" to="/jokes">Jokes</Link>
             </h3>
             {children}
