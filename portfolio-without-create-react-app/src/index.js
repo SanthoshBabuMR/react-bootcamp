@@ -5,6 +5,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import App from './components/App';
 import Header from './components/Header';
 import MusicMaster from './projects/music-master';
+import EvensOrOdds from './projects/evens-or-odds';
 import Jokes from './components/Jokes';
 import './index.css';
 
@@ -14,6 +15,7 @@ ReactDOM.render(
         <Route exact path='/' render={() => (<Header><App /></Header>)}></Route>        
         <Route path='/jokes' render={() => (<Header><Jokes /></Header>)}></Route>
         <Route path='/music-master' render={() => (<Header><MusicMaster /></Header>)}></Route>
+        <Route path='/evens-or-odds' render={() => (<Header><EvensOrOdds /></Header>)}></Route>
     </Switch>
 </Router>,
  document.getElementById('root')

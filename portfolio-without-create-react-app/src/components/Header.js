@@ -18,6 +18,9 @@ const Header = ({children}) => {
             <h3 style={style}> 
                 <Link className="nav-link" to="/music-master">Music Master</Link>
             </h3>
+            <h3 style={style}> 
+                <Link className="nav-link" to="/evens-or-odds">Evens-Or-Odds</Link>
+            </h3>
             {children}
         </div>
     );
