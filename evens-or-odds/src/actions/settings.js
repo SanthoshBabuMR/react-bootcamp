@@ -1,4 +1,14 @@
-import { SET_GAME_STARTED, EXPAND_INSTRUCTIONS } from '../actions/types';
+import { SET_GAME_STARTED, EXPAND_INSTRUCTIONS, SET_PLAYER_CHOICE } from '../actions/types';
+
+
+export const setPlayerChoice = (player_choice) => {
+    return {
+        type: SET_PLAYER_CHOICE,
+        payload: {
+            player_choice
+        }
+    }
+}
 
 export const startGame = () => {
     return {
@@ -35,3 +45,4 @@ export const collapseInstructions = () => {
         }
     }
 }
+

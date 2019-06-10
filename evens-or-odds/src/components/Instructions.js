@@ -32,7 +32,7 @@ class Instructions extends Component {
 
 const mapStateToProps = state => {
     return {
-        instructionsExpanded: state.instructionsExpanded
+        instructionsExpanded: state.settings.instructionsExpanded
     }
 }
 
