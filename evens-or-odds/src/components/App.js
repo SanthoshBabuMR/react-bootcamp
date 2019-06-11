@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { startGame, endGame, setGameId, setCard, evenGuess, oddGuess } from '../actions/settings';
+import { startGame, endGame } from '../actions/settings';
 import DrawCard from './DrawCard';
 import Instructions from './Instructions';
 import { setPlayerChoice } from '../actions/settings';
@@ -8,7 +8,6 @@ import { fetchNewDeck } from '../actions/deck';
 import {fetchNewCard} from '../actions/card';
 import {FETCH_STATES} from '../constant/index';
 
-const DECK_OF_CARDS = 'http://deck-of-cards-api-wrapper.appspot.com';
 class App extends Component {
 
     start = () => {

@@ -30,7 +30,7 @@ const card = (deck_id, image, fetchNewCard) => (
 );
 
 const DrawCard = props => {
-    const {deck_id, player_choice, correct_guess, remaining, image, setPlayerChoice, fetchNewCard, all_time_best} = props;
+    const {deck_id, player_choice, correct_guess, remaining, image, setPlayerChoice, fetchNewCard} = props;
     const evenBtnCls = classNames('btn', {'btn-primary': (player_choice === 'even')})
     const oddBtnCls = classNames('btn', {'btn-primary': (player_choice === 'odd')})
     const record = checkRecord(correct_guess);
